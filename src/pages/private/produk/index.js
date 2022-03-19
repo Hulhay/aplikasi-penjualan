@@ -2,10 +2,10 @@ import React from 'react';
 import {Outlet} from 'react-router-dom';
 
 
-function Pengaturan() {
+function Produk() {
 	
 	return <Outlet />
 
 }
 
-export default Pengaturan;
+export default Produk;

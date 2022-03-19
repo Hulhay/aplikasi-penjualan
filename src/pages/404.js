@@ -2,7 +2,7 @@ import React from 'react';
 
 function NotFound() {
 	
-	return <h1>404: Halaman NotFound</h1>	
+	return <h1>404: Halaman Not Found</h1>	
 
 }
 
