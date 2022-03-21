@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Routes, Outlet} from 'react-router-dom';
+import {BrowserRouter, Route, Routes, Outlet, Navigate} from 'react-router-dom';
 
 import Registrasi from './pages/registrasi';
 import Login from './pages/login';
@@ -29,7 +29,7 @@ function App() {
           <Route path="toko" element={<Toko />} />
         </Route>
 
-        <Route exact path="produk" element={<PrivateRoute><Outlet /></PrivateRoute>} >
+        <Route exact path="produk" element={<><Navigate to="grid" /><Outlet />< />} >
           <Route path="grid" element={<GridProduk />} />
           <Route path="edit/:produkId" element={<EditProduk />} />
         </Route>
